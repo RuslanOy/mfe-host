@@ -9,7 +9,7 @@ export const Header = (): React.ReactElement => {
   const location = useLocation();
 
   return (
-    <Container paddingTop="1rem" paddingBottom="1rem" paddingInline="0" maxWidth="700px">
+    <Container padding="1rem" maxWidth="700px">
       <Flex direction="row" justifyContent="space-between" alignItems="center">
         <Stack direction="row" gap="5" display={{ base: 'none', md: 'flex' }}>
           {headerLinks.map((link) => (
