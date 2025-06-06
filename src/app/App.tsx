@@ -1,18 +1,25 @@
-import React, { Suspense } from 'react';
-import { Box, Flex, Skeleton } from '@chakra-ui/react';
+import React from 'react';
+import { Box, Flex } from '@chakra-ui/react';
 import { Header } from '@/features/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from '@/pages/Home';
 
 const AboutMe = React.lazy(() => import('mfeAboutMe/AboutMe'));
+const TodoList = React.lazy(() => import('mfeTodoList/TodoList'));
 
 export const App = (): React.ReactElement => {
   return (
-    <Flex direction="column" alignItems="center">
-      <Header />
-      <Box maxWidth="1000px">
-        <Suspense fallback={<Skeleton height="200px" />}>
-          <AboutMe />
-        </Suspense>
-      </Box>
-    </Flex>
+    <BrowserRouter>
+      <Flex direction="column" alignItems="center">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/todos" element={<TodoList />} />
+          <Route path="/wallet" element={<Box>Wallet Page (Coming Soon)</Box>} />
+          <Route path="/workers" element={<Box>Web Workers Page (Coming Soon)</Box>} />
+        </Routes>
+      </Flex>
+    </BrowserRouter>
   );
 };
