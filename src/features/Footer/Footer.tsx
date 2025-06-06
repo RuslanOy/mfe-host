@@ -13,7 +13,7 @@ export const Footer = (): React.ReactElement => {
     <Container as="footer" py={{ base: '6', md: '8' }} maxWidth="700px">
       <Flex direction="row" justify="space-between" align="center">
         <Text textStyle={{ base: 'lg', md: 'xl' }}>
-          Each page is an independent module. You can view each module separately{' '}
+          Each page is an independent module. You can view this module separately{' '}
           <Link
             href={currentModule.link}
             color="bg.inverted"
