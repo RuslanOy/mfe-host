@@ -9,12 +9,8 @@ export const Header = (): React.ReactElement => {
   const location = useLocation();
 
   return (
-    <Container paddingBlock="1rem">
-      <Flex
-        direction="row"
-        justifyContent={{ base: 'space-between', md: 'space-evenly' }}
-        alignItems="center"
-      >
+    <Container paddingTop="1rem" paddingBottom="1rem" paddingInline="0" maxWidth="700px">
+      <Flex direction="row" justifyContent="space-between" alignItems="center">
         <Stack direction="row" gap="5" display={{ base: 'none', md: 'flex' }}>
           {headerLinks.map((link) => (
             <Link key={link.path} to={link.path}>
