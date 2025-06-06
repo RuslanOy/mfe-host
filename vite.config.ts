@@ -28,7 +28,7 @@ export default defineConfig({
         mfeAboutMe: 'https://mfe-about-me.vercel.app/assets/remoteEntry.js',
         mfeToDoList: 'https://mfe-todolist.vercel.app/assets/remoteEntry.js',
       },
-      shared: ['react', 'react-dom', '@chakra-ui/react', 'react-i18next', 'i18next'],
+      shared: ['react', 'react-dom', '@chakra-ui/react', 'react-i18next', 'i18next', 'zustand'],
     }),
   ],
   build: {
