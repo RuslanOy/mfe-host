@@ -45,6 +45,10 @@ const Texts = [
     link: 'https://mfe-todolist.vercel.app/',
     route: '/todos',
   },
+  {
+    link: 'https://mfe-crypto.vercel.app/',
+    route: '/crypto',
+  },
 ];
 
 const socialLinks = [

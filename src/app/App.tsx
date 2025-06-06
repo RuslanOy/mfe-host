@@ -7,6 +7,7 @@ import { Footer } from '@/features/Footer';
 
 const AboutMe = React.lazy(() => import('mfeAboutMe/AboutMe'));
 const ToDoList = React.lazy(() => import('mfeToDoList/ToDoList'));
+const Crypto = React.lazy(() => import('mfeCrypto/Crypto'));
 
 export const App = (): React.ReactElement => {
   return (
@@ -17,7 +18,7 @@ export const App = (): React.ReactElement => {
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/todos" element={<ToDoList />} />
-            <Route path="/wallet" element={<Box>Wallet Page (Coming Soon)</Box>} />
+            <Route path="/crypto" element={<Crypto />} />
             <Route path="/workers" element={<Box>Web Workers Page (Coming Soon)</Box>} />
           </Routes>
         </Suspense>
