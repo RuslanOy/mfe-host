@@ -37,5 +37,7 @@ export default defineConfig({
     minify: false,
     cssCodeSplit: false,
     chunkSizeWarningLimit: 1000,
+    assetsInlineLimit: 0,
   },
+  assetsInclude: ['**/*.pdf'],
 });
