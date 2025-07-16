@@ -6,6 +6,6 @@ export interface HeaderLink {
 export const headerLinks: HeaderLink[] = [
   { label: 'Home', path: '/' },
   { label: 'ToDo List', path: '/todos' },
-  { label: 'Crypto', path: '/crypto' },
-  { label: 'Web Workers', path: '/workers' },
+  // { label: 'Crypto', path: '/crypto' },
+  // { label: 'Web Workers', path: '/workers' },
 ];
