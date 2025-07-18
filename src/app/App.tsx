@@ -7,7 +7,7 @@ import { Footer } from '@/features/Footer';
 
 const AboutMe = React.lazy(() => import('mfeAboutMe/AboutMe'));
 const ToDoList = React.lazy(() => import('mfeToDoList/ToDoList'));
-const Crypto = React.lazy(() => import('mfeCrypto/Crypto'));
+const Crypto = React.lazy(() => import('@/pages/Crypto').then(module => ({ default: module.Crypto })));
 
 export const App = (): React.ReactElement => {
   return (
