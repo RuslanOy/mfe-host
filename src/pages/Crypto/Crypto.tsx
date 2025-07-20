@@ -4,7 +4,12 @@ export const Crypto = (): React.ReactElement => {
   return (
     <iframe
       src="https://mfe-crypto.vercel.app/"
-      style={{ maxWidth: '700px', height: '100%', width: '100%' }}
+      style={{
+        maxWidth: '700px',
+        height: 'calc(100vh - 250px)',
+        width: '100%',
+        border: 'none',
+      }}
     />
   );
 };
